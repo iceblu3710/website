@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <!-- page stylesheet -->
+  <link rel="stylesheet" href="/scripts/slate_style.css"/>
+  <!-- code highlighting -->
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/obsidian.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- retina screen images -->
+  <script type="text/javascript" src="/scripts/retina.js"></script>
+  
+  <title>Stellarium</title>
+</head>
+
+<body>
+  <div id="header">
+    <h1><a href="/">SumDumDum</a> // Stellarium</h1>
+    
+    <div id="navcontainer">
+      <ul id="navlist">
+        <!-- List of folders for nav menu -->
+        <li><a href="/projects/">projects</a></li>
+        <li><a href="/about/">about</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="content">
+  <!-- End header -->
+<h2>About</h2>
+
+<p>Stellarium is astonomy simulation software.</p>
+
+<h2>Demo</h2>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zgvNB_A5OGY" frameborder="0" allowfullscreen></iframe>
+
+<p>(<a href="https://www.youtube.com/v/zgvNB_A5OGY">watch on YouTube</a> to see it in HD)</p>
+
+<h2>Seatures</h2>
+
+<p>Stellarium can do these things:</p>
+
+<ul>
+<li>Virtual planetarium</li>
+<li>Telescope control</li>
+<li>Eyepiece view simulator</li>
+</ul>
+
+<h3>Screenshots</h3>
+
+<p>Here is what it looks like:</p>
+
+<p><img src="images/stellarium.png" alt="Graph example" title="" /></p>
+
+<hr />
+
+<p>This is what code looks like:</p>
+
+<pre><code class="python"># Calculating square roots by Newton's method, inspired by SICP
+#   http://mitpress.mit.edu/sicp/full-text/book/book-Z-H-10.html#%_sec_1.1.7
+
+def sqrt(x):
+    def average(a, b):
+        return (a + b) / 2.0
+
+    def is_good_enough(guess):
+        return (abs((guess * guess) - x) < 0.001)
+
+    def improve(guess):
+        return average(guess, x / guess)
+
+    def sqrt_iter(guess):
+        if is_good_enough(guess):
+            return guess
+        else:
+            return sqrt_iter(improve(guess))
+
+    return sqrt_iter(1.0)
+
+
+ans = sqrt(9)
+</code></pre>
+<!-- Begin footer -->
+</div>
+<div id="copyright">
+<p>© 05.30.2015 SumDumDum</p>
+</div>
+
+</body>
+</html>

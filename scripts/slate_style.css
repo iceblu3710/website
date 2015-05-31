@@ -1,0 +1,175 @@
+html {
+    margin: 0px;
+    padding:0 ;
+}
+
+body {
+    font-size: 0.9em;
+    line-height: 1.3em;
+    font-family: "Verdana", sans-serif;
+    text-align: left;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ccc;
+    color: #777;
+}
+
+a {
+    color: #567;
+    text-decoration: none;
+    background: #ddd;
+}
+a:hover {
+    color: #345;
+    background: #ccc;
+}
+
+a.imglink {
+    background: none;
+}
+a.imglink:hover {
+    background: none;
+}
+
+code {
+    font-family: "Courier New", monospace;
+}
+
+table {
+    border-collapse:collapse;
+    width:100%;
+    text-align:center;
+}
+td, tr  {
+    border: 1px solid grey;
+}
+th {
+    border-bottom: 2px solid black;
+}
+
+/* Main page title */
+h1 {
+    font: 2.1em Verdana, Sans-Serif;
+    color: #999;
+}
+div#header a {
+    color: #678;
+    text-decoration: none;
+    background: none;
+}
+div#header a:hover {
+    color: #345;
+    background: none;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 0;
+    padding-left: 10px;
+}
+
+img {
+    margin-right: 10px;
+}
+
+/* Secondary header */
+h2 {
+    font: 1.5em Verdana, Sans-Serif;
+    margin-top: 1em;
+}
+div.backlink {
+    font: 1.1em Verdana, Sans-Serif;
+    margin-left: 2em;
+}
+/* Page and header backgrounds */
+div#content{
+    background: #eeeeee;
+    padding: 1px 130px 30px 20px;
+    width: 600px;
+}
+
+div#header{
+    background: #e4e4e4;
+    padding: 20px 20px 1px 20px;
+}
+
+div#copyright{
+    text-align: right;
+    color: #888;
+}
+
+/* Table of contents */
+div#TOC {
+    background: #eee;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: inline-block
+}
+div#TOC h2 {
+    margin-top: 0;
+}
+div#TOC a  {
+    padding-left: 10px;
+}
+
+/* Top navigation bar */
+ul#navlist {
+    padding-left: 20px;
+}
+ul#navlist li {
+    display: inline;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+ul#navlist li#active {
+    font-weight: bold;
+}
+
+/* In-text navigation (on homepage) */
+table#bignav {
+    text-align: left;
+    font-size: 1.5em;
+    margin-top: 40px;
+    margin-left: 20px;
+    width:auto;
+}
+table#bignav td, tr, th {
+    border: 0px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+}
+
+a.biglink {
+    font-size: 1.2em;
+    margin-right: 40px;
+}
+
+/* Thumbnails for the projects home page */
+div.project table{
+    width:auto;
+    border: 0px;
+    padding: 0px;
+    text-align:left;
+}
+div.project td, tr, th {
+    border: 0px;
+    padding-right: 10px;
+}
+
+
+div.caption {
+ text-align:center;
+}
+
+/* Two-column layout table */
+table.twocol tr td {
+    border: 0px;
+}
+
+table.twocol {
+    text-align:left;
+    margin-left: 30px;
+}
